@@ -1,0 +1,51 @@
+html, body {
+    padding-top: 34px;
+    height: 100%;
+    width: 100%;
+    color: #222;
+}
+.navbar {
+    padding: .8rem;
+}
+.navbar-nav li{
+    padding-right: 20px;
+}
+.nav-link {
+    font-size: 1.1em !important;
+}
+.social a {
+    font-size: 4.5em;
+    padding: 3rem;
+}
+.fa-linkedin {
+    color: #0e76a8;
+}
+.fa-github {
+    color: #171515;
+}
+.fa-instagram {
+    color: #F77737;
+}
+.fa-twitter {
+    color: #00acee;
+}
+.resume-button {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+a.anchor {
+    display: block;
+    position: relative;
+    top: -83px;
+    visibility: hidden;
+}
+.card-img-top {
+    max-height: 200px;
+    min-height: 150px;
+    object-fit: cover;
+}
+footer {
+    background-color: #343a40;
+    color: #d5d5d5;
+    padding-top: 2rem;
+}
