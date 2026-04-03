@@ -182,6 +182,12 @@ h2 {
     font-size: 0.9rem;
 }
 
+.edu-detail {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0.25rem;
+}
+
 /* Skills */
 .skills-grid {
     display: flex;
