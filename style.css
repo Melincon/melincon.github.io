@@ -159,17 +159,9 @@ h2 {
     font-weight: 600;
 }
 
-.institution {
+.degree {
     color: var(--text-muted);
     font-size: 0.9rem;
-}
-
-.edu-detail {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    margin-bottom: 0.25rem;
-    padding-left: 1rem;
-    border-left: 2px solid var(--border);
 }
 
 /* Skills */
