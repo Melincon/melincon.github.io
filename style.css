@@ -138,25 +138,7 @@ h2 {
     white-space: nowrap;
 }
 
-.job ul {
-    list-style: none;
-    padding-left: 0;
-}
 
-.job li {
-    position: relative;
-    padding-left: 1rem;
-    margin-bottom: 0.35rem;
-    font-size: 0.9rem;
-    color: var(--text-muted);
-}
-
-.job li::before {
-    content: "–";
-    position: absolute;
-    left: 0;
-    color: var(--border);
-}
 
 /* Education */
 .edu {
