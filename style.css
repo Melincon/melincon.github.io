@@ -141,8 +141,8 @@ h2 {
 
 
 /* Education */
-.edu {
-    margin-bottom: 2rem;
+.education .edu + .edu {
+    margin-top: 2rem;
 }
 
 .edu-header {
@@ -187,16 +187,16 @@ h2 {
 }
 
 /* Contact */
-#contact p {
+.contact p {
     font-size: 0.95rem;
 }
 
-#contact a {
+.contact a {
     color: var(--accent);
     text-decoration: none;
 }
 
-#contact a:hover {
+.contact a:hover {
     text-decoration: underline;
 }
 
