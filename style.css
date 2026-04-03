@@ -1,51 +1,207 @@
-html, body {
-    padding-top: 34px;
-    height: 100%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #111111;
+    --surface: #1a1a1a;
+    --border: #2a2a2a;
+    --text: #e0e0e0;
+    --text-muted: #888888;
+    --accent: #6eb5ff;
+    --accent-dim: #4a90cc;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Nav */
+nav {
+    position: fixed;
+    top: 0;
     width: 100%;
-    color: #222;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.8rem 1rem;
+    z-index: 10;
 }
-.navbar {
-    padding: .8rem;
+
+nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    transition: color 0.2s;
 }
-.navbar-nav li{
-    padding-right: 20px;
+
+nav a:hover {
+    color: var(--accent);
 }
-.nav-link {
-    font-size: 1.1em !important;
+
+/* Header */
+header {
+    text-align: center;
+    padding: 8rem 1rem 4rem;
 }
-.social a {
-    font-size: 4.5em;
-    padding: 3rem;
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.3rem;
 }
-.fa-linkedin {
-    color: #0e76a8;
+
+.subtitle {
+    font-size: 1.15rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
 }
-.fa-github {
-    color: #171515;
+
+.tagline {
+    color: var(--text-muted);
+    font-size: 0.95rem;
 }
-.fa-instagram {
-    color: #F77737;
+
+/* Main */
+main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 1.5rem 4rem;
 }
-.fa-twitter {
-    color: #00acee;
+
+section {
+    margin-bottom: 3.5rem;
 }
-.resume-button {
-    width: 100%;
+
+h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Jobs */
+.job {
     margin-bottom: 2rem;
 }
-a.anchor {
-    display: block;
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.job h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.company {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.dates {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.job ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.job li {
     position: relative;
-    top: -83px;
-    visibility: hidden;
+    padding-left: 1rem;
+    margin-bottom: 0.35rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
 }
-.card-img-top {
-    max-height: 200px;
-    min-height: 150px;
-    object-fit: cover;
+
+.job li::before {
+    content: "–";
+    position: absolute;
+    left: 0;
+    color: var(--border);
 }
+
+/* Skills */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 0.35rem 0.85rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* Contact */
+#contact p {
+    font-size: 0.95rem;
+}
+
+#contact a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
-    background-color: #343a40;
-    color: #d5d5d5;
-    padding-top: 2rem;
+    text-align: center;
+    padding: 2rem 1rem;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    border-top: 1px solid var(--border);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        gap: 1rem;
+        padding: 0.6rem 0.5rem;
+    }
+
+    nav a {
+        font-size: 0.75rem;
+    }
+
+    .job-header {
+        flex-direction: column;
+    }
 }
