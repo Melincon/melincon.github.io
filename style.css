@@ -134,6 +134,7 @@ h2 {
 .dates {
     color: var(--text-muted);
     font-size: 0.85rem;
+    font-style: italic;
     white-space: nowrap;
 }
 
@@ -155,6 +156,30 @@ h2 {
     position: absolute;
     left: 0;
     color: var(--border);
+}
+
+/* Education */
+.edu {
+    margin-bottom: 2rem;
+}
+
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.edu h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.institution {
+    color: var(--text-muted);
+    font-size: 0.9rem;
 }
 
 /* Skills */
